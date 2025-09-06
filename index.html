@@ -67,6 +67,10 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       animation: fadeIn 0.4s ease;
     }
+    p, ul, ol {
+      text-align: justify;
+      text-justify: inter-word;
+    }
     section.active {
       display: block;
     }
@@ -97,10 +101,10 @@
 </head>
 <body>
   <header>
-  <img src="photo.jpg" alt="Photo de mon fils" style="width:120px;height:auto;border-radius:50%;margin-bottom:15px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+  <img id="photo-cv" src="photo2.jpg" alt="Photo de mon fils" style="width:120px;height:auto;border-radius:70%;margin-bottom:15px;box-shadow:0 2px 8px rgba(0,0,0,0.15);cursor:pointer;">
   <h1>🌟 Evan Chabert Daniel 🌟</h1>
-    <p>Né le 06/10/2011 – 12 impasse Albert Camus</p>
-    <p>📞 07 68 04 72 00 | ✉️ evanchabertdaniel@gmail.com</p>
+  <p style="text-align:center;">Né le 06/10/2011 – 12 impasse Albert Camus 31600 Seysses</p>
+  <p style="text-align:center;">📞 07 68 04 72 00 | ✉️ evanchabertdaniel@gmail.com</p>
   </header>
 
   <nav>
@@ -115,11 +119,9 @@
   <section id="objectif" class="active">
     <h2>Objectif</h2>
     <p>
-      Collégien curieux et motivé, passionné par le game design, la lecture et le sport. Je souhaite réaliser un
-      <b>stage d’observation de 3e</b> pour découvrir le fonctionnement d’un service municipal
-      (médiathèque ou service des sports) et contribuer concrètement à la vie de la ville. Je suis
-      enthousiaste à l’idée d’apprendre, de m’impliquer dans des projets et de développer mes compétences
-      relationnelles et organisationnelles.
+   Collégien curieux et motivé, passionné par le game design, la lecture et le sport.
+  Je souhaite réaliser <b style="color:#e11d48;"> un stage d’observation de 3e </b> pour découvrir le fonctionnement d’une organisation professionnelle autour de mes centres d’intérêt (musée, magasin de jeux de société, service des sports, médiathèque) et contribuer concrètement à ses activités.
+    Je suis enthousiaste à l’idée d’apprendre, de m’impliquer dans des projets variés et de développer mes compétences relationnelles et organisationnelles.
     </p>
   </section>
 
@@ -127,7 +129,7 @@
     <h2>Formation</h2>
     <ul>
       <li><b>Collège Ginette Kolinka (2022 – 2025)</b> : Cursus général avec intérêt marqué pour les sciences et l’histoire. Evan participe activement aux projets collectifs et développe des méthodes de travail organisées.</li>
-      <li><b>Langues vivantes</b> : LV1 Anglais – bonne compréhension des textes, capacité à échanger à l’oral ; LV2 Espagnol – bases solides, progression constante.</li>
+      <li><b>Langues vivantes</b> : LV1 Anglais – bonne compréhension des textes, capacité à échanger à l’oral ; LV2 Espagnol – bases .</li>
       <li><b>UNSS</b> : membre de l’équipe de handball, participation régulière aux compétitions. Développement de l’esprit d’équipe, de la discipline et de la persévérance.</li>
     </ul>
   </section>
@@ -138,6 +140,7 @@
       <li><b>Bêta testeur – Nostromo Editions (2023–2025)</b> : Tests approfondis de jeux de société (Aetherya, Rivality, Orcs versus Orcs). Analyse du gameplay, identification des points faibles, propositions d’amélioration. Evan apprend à observer avec précision, formuler un avis construit et collaborer avec des créateurs.</li>
       <li><b>Initiation à la création de jeux – J. Partinico (2024)</b> : Demi-journée de découverte du game design. Travail collectif sur la conception d’un prototype : élaboration des règles, équilibre entre hasard et stratégie, test rapide du jeu. Développement de sa créativité et de ses compétences de travail en groupe.</li>
       <li><b>Création d’un défi nature – « La route du Temps » (2023)</b> : Conception d’un parcours éducatif autour de l’environnement et de l’histoire. Création d’énigmes et de scénarios pour sensibiliser un public. Cet exercice lui a permis de combiner imagination, pédagogie et sens pratique.</li>
+      <li><b>Point Action Jeunesse – Ville de Seysses (2023–2025)</b> : Participation active à des missions citoyennes pour la ville (peinture de bancs, décoration d’espaces publics, entretien de parcs et trottoirs). Travail en équipe avec d’autres jeunes, développement du sens des responsabilités et de l’initiative, et engagement concret pour améliorer le cadre de vie local.</li>
     </ul>
   </section>
 
@@ -188,6 +191,17 @@
         document.getElementById(tab.dataset.tab).classList.add('active');
       });
     });
+
+    // Photo toggle
+    const photoCv = document.getElementById('photo-cv');
+    photoCv.addEventListener('click', function() {
+      if (photoCv.src.includes('photo2.jpg')) {
+        photoCv.src = 'photo.jpg';
+      } else {
+        photoCv.src = 'photo2.jpg';
+      }
+    });
+
     // Date auto
     document.getElementById('date').textContent = new Date().toLocaleDateString();
   </script>
