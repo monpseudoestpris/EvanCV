@@ -29,24 +29,26 @@
       opacity: 0.9;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      background: #f8fafc;
-      padding: 10px;
-      border-bottom: 2px solid #e2e8f0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background: #7c7bd8;
+  padding: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(30,41,59,0.18), 0 1.5px 6px rgba(30,41,59,0.12);
     }
     nav button {
-      padding: 10px 20px;
-      margin: 0 5px;
-      border: none;
-      border-radius: 20px;
-      background: #e2e8f0;
-      cursor: pointer;
-      font-size: 14px;
-      transition: all 0.3s ease;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 20px;
+  background: #e2e8f0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     }
     nav button:hover {
       background: #2563eb;
@@ -58,14 +60,14 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
     section {
-      display: none;
-      padding: 30px;
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      animation: fadeIn 0.4s ease;
+  display: none;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: linear-gradient(180deg, #e0f2fe 0%, #60a5fa 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
     }
     p, ul, ol {
       text-align: justify;
@@ -119,7 +121,7 @@
   <section id="objectif" class="active">
     <h2>Objectif</h2>
     <p>
-   Collégien curieux et motivé, passionné par le game design, la lecture et le sport.
+   Collégien curieux et motivé, passionné par le game design, la lecture et le sport.<br>
   Je souhaite réaliser <b style="color:#e11d48;"> un stage d’observation de 3e </b> pour découvrir le fonctionnement d’une organisation professionnelle autour de mes centres d’intérêt (musée, magasin de jeux de société, service des sports, médiathèque) et contribuer concrètement à ses activités.
     Je suis enthousiaste à l’idée d’apprendre, de m’impliquer dans des projets variés et de développer mes compétences relationnelles et organisationnelles.
     </p>
@@ -128,7 +130,7 @@
   <section id="formation">
     <h2>Formation</h2>
     <ul>
-      <li><b>Collège Ginette Kolinka (2022 – 2025)</b> : Cursus général avec intérêt marqué pour les sciences et l’histoire. Evan participe activement aux projets collectifs et développe des méthodes de travail organisées.</li>
+      <li><b>Collège Ginette Kolinka (2022 – 2025)</b> : Cursus général avec intérêt marqué pour le sport et l’histoire.</li>
       <li><b>Langues vivantes</b> : LV1 Anglais – bonne compréhension des textes, capacité à échanger à l’oral ; LV2 Espagnol – bases .</li>
       <li><b>UNSS</b> : membre de l’équipe de handball, participation régulière aux compétitions. Développement de l’esprit d’équipe, de la discipline et de la persévérance.</li>
     </ul>
@@ -137,10 +139,11 @@
   <section id="experience">
     <h2>Expérience</h2>
     <ul>
-      <li><b>Bêta testeur – Nostromo Editions (2023–2025)</b> : Tests approfondis de jeux de société (Aetherya, Rivality, Orcs versus Orcs). Analyse du gameplay, identification des points faibles, propositions d’amélioration. Evan apprend à observer avec précision, formuler un avis construit et collaborer avec des créateurs.</li>
+        <li><b>Développement de règles d'un jeu de rôle (2025)</b>, basé sur les univers de V Rising et Elden Ring./li>
+      <li><b>Bêta testeur – Nostromo Editions (2023–2025)</b> : Tests de jeux de société (Aetherya, Rivality, Orcs versus Orcs). Analyse du gameplay, identification des points faibles, propositions d’amélioration. J'apprends à observer avec précision, formuler un avis construit et collaborer avec des créateurs.</li>
       <li><b>Initiation à la création de jeux – J. Partinico (2024)</b> : Demi-journée de découverte du game design. Travail collectif sur la conception d’un prototype : élaboration des règles, équilibre entre hasard et stratégie, test rapide du jeu. Développement de sa créativité et de ses compétences de travail en groupe.</li>
-      <li><b>Création d’un défi nature – « La route du Temps » (2023)</b> : Conception d’un parcours éducatif autour de l’environnement et de l’histoire. Création d’énigmes et de scénarios pour sensibiliser un public. Cet exercice lui a permis de combiner imagination, pédagogie et sens pratique.</li>
-      <li><b>Point Action Jeunesse – Ville de Seysses (2023–2025)</b> : Participation active à des missions citoyennes pour la ville (peinture de bancs, décoration d’espaces publics, entretien de parcs et trottoirs). Travail en équipe avec d’autres jeunes, développement du sens des responsabilités et de l’initiative, et engagement concret pour améliorer le cadre de vie local.</li>
+      <li><b>Création d’un défi nature – « La route du Temps » (2023)</b> : Conception d'un jeu de cartes de type défi nature sur le thème de la Roue du Temps de Robert Jordan.</li>
+      <li><b>Point Action Jeunesse – Ville de Seysses (2023–2025)</b> : Participation active à des missions citoyennes pour la ville (peinture de bancs, décoration d’espaces publics, etc). Travail en équipe avec d’autres jeunes, développement du sens des responsabilités et de l’initiative, et engagement concret pour améliorer le cadre de vie local.</li>
     </ul>
   </section>
 
@@ -148,12 +151,11 @@
     <h2>Compétences</h2>
     <ul>
       <li><b>Esprit d’équipe</b> : coopération dans le sport (UNSS) et projets collectifs (PAJ). Sait écouter, respecter des consignes et apporter sa contribution.</li>
-      <li><b>Organisation</b> : planification de tâches, gestion du temps, respect des échéances scolaires et associatives.</li>
       <li><b>Communication</b> : capable de présenter ses idées clairement, de donner un retour constructif, mais aussi de prendre en compte l’avis des autres.</li>
       <li><b>Créativité</b> : imagination stimulée par la lecture, le jeu et les jeux de rôle. Capacité à inventer des histoires, créer des règles et animer des activités.</li>
-      <li><b>Résolution de problèmes</b> : habitude de chercher des solutions logiques dans des contextes variés (escape games, défis scolaires, situations de groupe).</li>
+      <li><b>Résolution de problèmes</b> : habitude de chercher des solutions logiques dans des contextes variés (participation à des escape games, jeux complexes).</li>
       <li><b>Outils numériques</b> : utilisation régulière de Word, Excel, LibreOffice et OneNote pour organiser ses cours et réaliser des travaux.</li>
-      <li><b>Langues</b> : anglais pratique (jeux, films, échanges scolaires), espagnol scolaire (bases solides et progression).</li>
+      <li><b>Langues</b> : anglais pratique (jeux, films), espagnol scolaire (bases).</li>
     </ul>
   </section>
 
@@ -161,8 +163,14 @@
     <h2>Centres d’intérêt</h2>
     <ul>
       <li><b>Sports</b> : Handball (compétitions UNSS, esprit collectif et rigueur), badminton (loisir et concentration), escalade (goût du défi et dépassement de soi), karaté (discipline, maîtrise de soi et respect des règles).</li>
-      <li><b>Lecture & Histoire</b> : lecture de grandes sagas de fantasy (intégralité des <i>Chroniques de Krondor</i>, 25 tomes). Passion pour l’histoire et la stratégie, approfondie par des jeux vidéo historiques (Age of Empires) et des séries comme <i>The Last Kingdom</i>. Ces univers nourrissent sa réflexion et sa créativité.</li>
-      <li><b>Jeux de société & Jeux de rôle</b> : pratique de Warhammer, Blood Bowl, Res Arcana. Rôle de maître de jeu, ce qui implique d’imaginer des scénarios, gérer un groupe, organiser une partie et maintenir l’intérêt des joueurs.</li>
+      <li><b>Lecture </b> : lecture de grandes sagas de fantasy (intégralité des <i>Chroniques de Krondor</i>, 25 tomes), et de Fourmis de Bernard Werber.</li> 
+      <li> <b> Histoire </b>:  Passion pour l’histoire, approfondie par des jeux vidéo historiques (Age of Empires) et des séries comme <i>The Last Kingdom</i>.</li>
+      <li><b>Jeux de société & Jeux de rôle</b> : pratique de Warhammer, Blood Bowl, Res Arcana, Nemesis, Mind Bug, Orc vs Orc<br> Rôle de maître de jeu débutant, ce qui implique d’imaginer des scénarios, gérer un groupe, organiser une partie et maintenir l’intérêt des joueurs.</li>
+      <li><b>Sciences</b> : Sciences naturelles: Volcans et Seismes et tout ce qui a un rapport avec la planète.</li>
+      <li><b>Jeux vidéos</b> :Minecraft, Elden ring, V rising</li>
+      <li><b>Musique</b> : Phonk, Shako Ponk. j'ai vu en concert Shaka Ponk, Muse, Indochine</li>
+
+
     </ul>
   </section>
 
